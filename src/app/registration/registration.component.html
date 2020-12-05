@@ -1,0 +1,59 @@
+<mat-card>
+    <mat-card-content>
+        <div class="header">
+            <h1>User Registration</h1>
+            Already have an account? <a routerLink="/login"><b>Login</b></a>
+        </div>
+        <form (ngSubmit)="registration()" name="registrationForm" [formGroup]="registrationForm">
+            <div class="all-input">
+                <mat-form-field class="input-width" appearance="outline">
+                    <mat-label>First Name</mat-label>
+                    <input formControlName="firstName" matInput required>
+                    <mat-error *ngIf="registrationForm.get('firstName').errors?.required">
+                        This is a required field
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div class="all-input">
+                <mat-form-field class="input-width" appearance="outline">
+                    <mat-label> Last Name</mat-label>
+                    <input type="text" formControlName="lastName" matInput required>
+                    <mat-error *ngIf="registrationForm.get('lastName').errors?.required">
+                        This is a required field
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div class="all-input">
+                <mat-form-field class="input-width" appearance="outline">
+                    <mat-label> Email</mat-label>
+                    <input type="email" formControlName="Email"matInput required> 
+                    <mat-error *ngIf="registrationForm.get('Email').errors?.required">
+                        Required email address
+                    </mat-error>
+                    <mat-error *ngIf="registrationForm.get('Email').errors?.email">
+                        Invalid email address
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div class="all-input">
+                <mat-form-field class="input-width" appearance="outline">
+                    <mat-label>Mobile No</mat-label>
+                    <input type="number" formControlName="Mnumber"matInput required>  
+                    <mat-error *ngIf="registrationForm.get('Mnumber').errors?.required">
+                        Mobile no is required 
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div class="all-input">
+                <mat-form-field class="input-width" appearance="outline">
+                    <mat-label> Aadhar No</mat-label>
+                    <input type="number" formControlName="Anumber"matInput required>   
+                    <mat-error *ngIf="registrationForm.get('Anumber').errors?.required">
+                    Aadhar no is required
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <button mat-flat-button color="primary">Register</button>
+        </form>
+    </mat-card-content>
+</mat-card>

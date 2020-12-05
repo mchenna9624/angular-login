@@ -1,0 +1,49 @@
+mat-card{
+    max-width: 600px;
+    margin: 2em auto;
+    text-align: center;
+    max-height: 800px;
+
+}
+h1{
+    color:blue;;
+}
+.header{
+    text-align:center;
+}
+
+.full-width{
+    width: 80%;
+}
+
+.forgot-password{
+    padding-left: 0px;
+}
+
+.email-input{
+    padding-top: 10px;
+}
+
+.aLink{
+    padding-top:30px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.bLink{
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-left: 20px;
+}
+.cLink{
+    text-decoration: none;
+
+}
+button{
+    width:450px;
+    height:40px;
+    
+}
+.row{
+    padding-top:30px;
+    color:rgb(33, 33, 66);
+}
