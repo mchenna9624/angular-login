@@ -1,0 +1,27 @@
+<mat-card>
+    <mat-card-content>
+        <h2>TOKENFORM</h2>
+        <div class="anchor">
+        <a>login</a> /<a>Register</a>
+    </div>
+            <form (ngsubmit)="onValidatetoken" name="validatetokenForm" [formGroup]="validatetokenForm">
+        <div class="email-input">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input formControlName="email" matInput required />
+                <mat-error *ngIf="validatetokenForm.get('email').errors?.required">
+                  <h4> Please check email address and try again</h4>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Token</mat-label>
+                <input formControlName="text" matInput required />  
+                <mat-error *ngIf="validatetokenForm.get('text').errors?.required" >
+                    <h4> This is a required input field</h4>
+                </mat-error>    
+             </mat-form-field>
+        </div>
+        <button mat-flat-button color="primary">Submit</button>
+    </form>
+        </mat-card-content>
+</mat-card>

@@ -1,0 +1,24 @@
+.mat-card{
+    max-width:600px;
+   margin-top:100px;
+   margin-left:430px;
+    max-height:600px;
+    text-align:center;
+}
+.full-width{
+    width: 80%;
+}
+.email-input{
+    padding-top: 10px;
+}
+button{
+    width:80%;
+    height:50px;
+    font-size:18px;
+    margin-top:10px;
+}
+.anchor{
+    margin-left:400px;
+    font-size:20px;
+   
+}
