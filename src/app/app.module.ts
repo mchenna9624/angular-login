@@ -13,13 +13,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component'
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+	ForgetpasswordComponent
   ],
   imports: [
     BrowserModule,
